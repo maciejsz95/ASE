@@ -2,7 +2,7 @@ import random
 import time
 
 
-def bubble_sort(sort):
+def bubble_sort(sort):                      # sortowanie bąbelkowe
     start = time.time()
     while True:
         list_sorted = False
@@ -18,7 +18,7 @@ def bubble_sort(sort):
     return sort
 
 
-def selection_sort(sort):
+def selection_sort(sort):                   # sortowanie przez wybór
     start = time.time()
     n = 0
     while n < len(sort):
@@ -36,7 +36,7 @@ def selection_sort(sort):
     return sort
 
 
-def quick(sort):
+def quick(sort):                             # sortowanie szybkie
     if len(sort) < 2:
         return sort
     pivot = len(sort)//2
@@ -55,7 +55,7 @@ def quick_sort(sort):
 
 
 max_rand = 5000
-number_of_number = 1000
+number_of_number = 5000
 
 list_to_sort1 = [random.randint(0, max_rand) for _ in range(number_of_number)]
 list_to_sort2 = list_to_sort1[:]
