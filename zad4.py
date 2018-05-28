@@ -77,8 +77,8 @@ def dijkstra(start, end):
     way.append(way_flag.name)
     way.reverse()
 
-    print("Way:  ", way)
-    print("Cost: ", end.cost)
+    print("Way:   ", way)
+    print("Cost:  ", end.cost)
 
 
 start_id = input("Start: ")
